@@ -24,7 +24,7 @@ namespace AbstractSample
         public override float GetBounds(out float height)
         {
             height = this.radius * 2;
-            return hight;
+            return height;
         }
     }
 }
