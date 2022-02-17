@@ -21,5 +21,11 @@ namespace AbstractSample
         {
             return (width + height) * 2;
         }
+
+        public override float GetBounds(out float height)
+        {
+            height = this.height;
+            return width;
+        }
     }
 }

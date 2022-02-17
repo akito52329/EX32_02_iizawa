@@ -17,6 +17,7 @@ namespace AbstractSample
             this.width = width;
             this.height = height;
         }
+
         public override float GetSurface()
         {
             return width / 2 * height;
@@ -24,6 +25,12 @@ namespace AbstractSample
         public override float GetCircumference()
         {
             return width + height + MathF.Sqrt(width * width + height * height);
+        }
+
+        public override float GetBounds(out float height)
+        {
+            height = this.height;
+            return width;
         }
     }
 }

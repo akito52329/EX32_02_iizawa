@@ -8,5 +8,6 @@ namespace AbstractSample
     {
         abstract public float GetSurface(); //面積を取得する
         abstract public float GetCircumference(); //周囲の長さを取得する
+        abstract public float GetBounds(out float height);//入る幅と高さを取得
     }
 }
