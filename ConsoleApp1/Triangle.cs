@@ -30,10 +30,12 @@ namespace AbstractSample
 
         public override float GetBounds(out float height)
         {
-            float bigMath = Math.Max(lineA, lineB);
-            bigMath = Math.Max(bigMath, lineC);
-            height = triangleSurface / bigMath * 2;
-            return bigMath;
+            //3辺で一番長い辺を底辺にする
+            float bottom = Math.Max(lineA, lineB);
+            bottom = Math.Max(bottom, lineC);
+
+            height = triangleSurface / bottom * 2;
+            return bottom;
         }
     }
 }
