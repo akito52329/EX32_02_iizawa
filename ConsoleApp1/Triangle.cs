@@ -35,7 +35,7 @@ namespace AbstractSample
 
         public override float GetBounds(out float height)
         {
-            //3辺で一番長い辺を底辺にする
+            //3辺で一番短い辺を底辺にする
             float bottom = Math.Min(lineA, lineB);
             bottom = Math.Min(bottom, lineC);
 
