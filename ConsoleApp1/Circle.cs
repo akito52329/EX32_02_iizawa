@@ -18,11 +18,11 @@ namespace AbstractSample
 
         public override float GetSurface()
         {
-            return radius * radius * (float)Math.PI;
+            return (float)(radius * radius * Math.PI);
         }
         public override float GetCircumference()
         {
-            return radius * 2 * (float)Math.PI;
+            return (float)(radius * 2 * Math.PI);
         }
 
         public override float GetBounds(out float height)
