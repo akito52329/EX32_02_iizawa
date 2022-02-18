@@ -7,6 +7,10 @@ namespace AbstractSample
     class Circle : Surface
     {
         readonly public float radius;
+        /// <summary>
+        /// 円
+        /// </summary>
+        /// <param name="radius">半径</param>
         public Circle(float radius = 0)
         {
             this.radius = radius;

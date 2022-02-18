@@ -12,6 +12,11 @@ namespace AbstractSample
     {
         readonly public float width;
         readonly public float height;
+        /// <summary>
+        /// 直角三角形
+        /// </summary>
+        /// <param name="width">幅</param>
+        /// <param name="height">高さ</param>
         public RightTriangle(float width = 0, float height = 0)
         {
             this.width = width;

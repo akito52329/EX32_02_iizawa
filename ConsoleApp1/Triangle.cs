@@ -10,7 +10,12 @@ namespace AbstractSample
         readonly public float lineB;
         readonly public float lineC;
         public float triangleSurface;
-
+        /// <summary>
+        /// 三角形
+        /// </summary>
+        /// <param name="a">辺A</param>
+        /// <param name="b">辺B</param>
+        /// <param name="c">辺C</param>
         public Triangle(float a = 0, float b = 0 , float c = 0)
         {
             this.lineA = a;

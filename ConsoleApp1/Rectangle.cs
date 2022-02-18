@@ -8,6 +8,11 @@ namespace AbstractSample
     {
         readonly public float width;
         readonly public float height;
+        /// <summary>
+        /// 長方形
+        /// </summary>
+        /// <param name="width">幅</param>
+        /// <param name="height">高さ</param>
         public Rectangle(float width = 0, float height = 0)
         {
             this.width = width;
