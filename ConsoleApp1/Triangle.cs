@@ -9,7 +9,6 @@ namespace AbstractSample
         readonly public float lineA;
         readonly public float lineB;
         readonly public float lineC;
-        public float triangleSurface;
         /// <summary>
         /// 三角形
         /// </summary>
@@ -26,7 +25,7 @@ namespace AbstractSample
         public override float GetSurface()
         {
             float smallS = (lineA + lineB + lineC) / 2;
-            return triangleSurface = MathF.Sqrt(smallS * (smallS - lineA) * (smallS - lineB) * (smallS - lineC));
+            return MathF.Sqrt(smallS * (smallS - lineA) * (smallS - lineB) * (smallS - lineC));
         }
         public override float GetCircumference()
         {
@@ -39,7 +38,7 @@ namespace AbstractSample
             float bottom = Math.Min(lineA, lineB);
             bottom = Math.Min(bottom, lineC);
 
-            height = triangleSurface / bottom * 2;
+            height = GetSurface() / bottom * 2;
             return bottom;
         }
     }
