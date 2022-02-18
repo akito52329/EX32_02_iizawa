@@ -36,8 +36,8 @@ namespace AbstractSample
         public override float GetBounds(out float height)
         {
             //3辺で一番長い辺を底辺にする
-            float bottom = Math.Max(lineA, lineB);
-            bottom = Math.Max(bottom, lineC);
+            float bottom = Math.Min(lineA, lineB);
+            bottom = Math.Min(bottom, lineC);
 
             height = triangleSurface / bottom * 2;
             return bottom;
